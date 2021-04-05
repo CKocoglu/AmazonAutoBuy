@@ -5,10 +5,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
+
 minPrice=799       #3500.0   #Added for book for test with small price. line 113 should be 1000
 maxPrice=850       #6000.0
 global Test
 global targetURL
+
 global oneClickButtonActive
 Test = True                  #If true program will not buy anything in last step.
 oneClickButtonActive = True  # False normal way to buy.
