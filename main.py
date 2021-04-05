@@ -11,12 +11,13 @@ maxPrice=6000.0
 def Initialize():
     # options chrome userfile
     options = webdriver.ChromeOptions()
-    options.add_argument(r'--user-data-dir=\MostSecretProject\ChromeUser')
+    options.add_argument(r'--user-data-dir=C:\Users\ckocoglu\PycharmProjects\MostSecretProject\ChromeUser')
     options.add_argument(r"--profile-directory=Profile 3")
 
     # initialize web driver
-    driver = webdriver.Chrome(r"M:\SecretProject\MostSecretProject\Drivers\chromedriver.exe", options=options)
+    driver = webdriver.Chrome(r"C:\Users\ckocoglu\PycharmProjects\MostSecretProject\Drivers\chromedriver.exe",options=options)
     driver.maximize_window()
+
     time.sleep(2)
     targetURL = "https://www.amazon.com.tr/hz/wishlist/ls/KKS0SE2BHJ94/ref=nav_wishlist_lists_2?_encoding=UTF8&type=wishlist"
     driver.get(targetURL)
